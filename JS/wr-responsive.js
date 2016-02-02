@@ -1,4 +1,4 @@
-/* Responsive JS  */
+/* WR Responsive JS  */
 /* JS file developed by Dream Webs */
 /* This script and other files are part of a framework that is developed by Dream Webs */
 
