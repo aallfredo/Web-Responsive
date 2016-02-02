@@ -400,7 +400,7 @@ li p, .dw-postcontent li p, .dw-blockcontent li p
    margin-right: 0 !important;
 }
 
-.dw-object1859924731
+.dw-background
 {
     display: block;
     left: 3.12%;
@@ -409,20 +409,16 @@ li p, .dw-postcontent li p, .dw-blockcontent li p
     top: 7px;
     width: 413px;
     height: 93px;
-    background-image: url('images/object1859924731.png');
+    background-image:('images/background.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     z-index: 1;
 }
 
-.default-responsive .dw-object1859924731
+.default-responsive .dw-background
 {
   display: none;
 }
-
-
-
-
 
 .dw-sheet
 {
@@ -448,6 +444,7 @@ li p, .dw-postcontent li p, .dw-blockcontent li p
    z-index: auto !important;
 }
 
+/* Uncomment this in case of need */
 /*.custom-responsive .dw-header
 {
    background-image: url('images/header.jpg');
@@ -559,7 +556,7 @@ ul.dw-hmenu
 
 .dw-hmenu
 {
-   /*This line is for background color of the navigation elements*/
+   /*This line is for background color of the navigation elements. Uncomment as needed */
    /*background: #5a1f7d;*/ 
    float: center;
 }
@@ -905,12 +902,14 @@ ul.dw-hmenu ul
 {
    position: absolute;
    content: ' ';
+   
    /* top, right, left - for shadow */
-  top: 0;
+   top: 0;
    right: 0;
    left: 0;
+   
    /* border + shadow */
-  bottom: -1px;
+   bottom: -1px;
    background-color: #EFF2F5;
    border: 1px Dotted rgba(207, 216, 226, 0.9);
    border-top-left-radius: 3px;
@@ -959,6 +958,7 @@ ul.dw-hmenu>li.ext>.ext-off
    position: absolute;
    display: block;
    overflow: hidden;
+   
    /* size of radius 
    * if size if 0 we should now generate script 
    * that adds ext-r and ext-m divs
@@ -967,7 +967,7 @@ ul.dw-hmenu>li.ext>.ext-off
    top: 100%;
    padding-top: 1px;
    margin-top: -1px;
-/* border width + shadow */}
+  /* border width + shadow */}
 
 .desktop ul.dw-hmenu>li.ext:hover>.ext-r:before,
 .desktop ul.dw-hmenu>li.ext:hover>.ext-l:before
@@ -975,8 +975,9 @@ ul.dw-hmenu>li.ext>.ext-off
    position: absolute;
    content: ' ';
    top: 0;
+   
    /* border + shadow */
-  bottom: -1px;
+   bottom: -1px;
    background-color: #EFF2F5;
    border: 1px Dotted rgba(207, 216, 226, 0.9);
    box-shadow: 0 0 0 rgba(0, 0, 0, 0.8);
@@ -990,7 +991,7 @@ ul.dw-hmenu>li.ext>.ext-off
    margin-left: 0;
    padding-right: 1px;
    margin-right: -1px;
-/* only shadow */}
+   /* only shadow */}
 
 .desktop ul.dw-hmenu>li.ext.ext-r:hover>.ext-r:before
 {
@@ -1008,7 +1009,7 @@ ul.dw-hmenu>li.ext>.ext-off
    margin-right: 0;
    padding-left: 1px;
    margin-left: -1px;
-/* only shadow */}
+   /* only shadow */}
 
 .desktop ul.dw-hmenu>li.ext.ext-l:hover>.ext-l:before
 {
@@ -1031,40 +1032,44 @@ ul.dw-hmenu>li.ext>.ext-off
 .desktop ul.dw-hmenu>li.ext.ext-r:hover>.ext-m 
 {
    /* shadow offset */
-  left: -0;
+   left: -0;
    right: 0;
+   
    /* shadow offset */
-  padding-right: 0;
+   padding-right: 0;
    padding-left: 0;
 }
 
 .desktop ul.dw-hmenu>li.ext:hover>.ext-off 
 {
    /* shadow offset */
-  left: -0;
+   left: -0;
    right: -0;
+   
    /* shadow offset */
-  padding-left: 0;
+   padding-left: 0;
    padding-right: 0;
 }
 
 .desktop ul.dw-hmenu>li.ext.ext-l:hover>.ext-m
 {
    /* shadow offset */
-  right: -0;
+   right: -0;
    left: 0;
+   
    /* shadow offset */
-  padding-left: 0;
+   padding-left: 0;
    padding-right: 0;
 }
 
 .desktop ul.dw-hmenu>li.ext.ext-l.ext-r:hover>.ext-m
 {
    /* shadow offset */
-  right: -0;
+   right: -0;
    left: -0;
+   
    /* shadow offset */
-  padding-left: 0;
+   padding-left: 0;
    padding-right: 0;
 }
 
@@ -1075,8 +1080,9 @@ ul.dw-hmenu>li.ext>.ext-off
    content: ' ';
    top: -1px;
    bottom: -1px;
+   
    /* shadow offset */
-  background-color: #EFF2F5;
+   background-color: #EFF2F5;
    border: 1px Dotted rgba(207, 216, 226, 0.9);
    box-shadow: 0 0 0 rgba(0, 0, 0, 0.8);
 }
@@ -1135,7 +1141,7 @@ ul.dw-hmenu>li.ext>.ext-off
    vertical-align: top;
 }
 
-/* need only for content layout in post content */ 
+/* Needed only for content layout in post or content layouts */ 
 .dw-postcontent .dw-content-layout
 {
    border-collapse: collapse;
@@ -1166,6 +1172,7 @@ div.dw-block img
    padding:12px 7px;
    margin:0 auto;
 }
+
 .dw-blockheader .t,
 .dw-blockheader .t a,
 .dw-blockheader .t a:link,
@@ -1190,6 +1197,7 @@ div.dw-block img
    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
    line-height: 175%;
 }
+
 .dw-blockcontent table,
 .dw-blockcontent li, 
 .dw-blockcontent a,
@@ -1368,6 +1376,7 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
    border:1px solid #B9C2CB;
    margin:0 auto;
 }
+
 input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="number"], input[type="range"], input[type="tel"], input[type="time"], input[type="week"], textarea
 {
    width: 50%;
@@ -1379,12 +1388,14 @@ input[type="text"], input[type="password"], input[type="email"], input[type="url
    font-style: normal;
    text-shadow: none;
 }
+
 input.dw-error, textarea.dw-error
 {
    background: #F9FAFB;
    border:1px solid #E2341D;
    margin:0 auto;
 }
+
 input.dw-error, textarea.dw-error {
    color: #3D5166 !important;
    font-size: 13px;
@@ -1392,6 +1403,7 @@ input.dw-error, textarea.dw-error {
    font-weight: normal;
    font-style: normal;
 }
+
 form.dw-search input[type="text"]
 {
    background: #FFFFFF;
@@ -1411,6 +1423,7 @@ form.dw-search input[type="text"]
    font-weight: normal;
    font-style: normal;
 }
+
 form.dw-search 
 {
    background-image: none;
@@ -1442,6 +1455,7 @@ form.dw-search input[type="submit"], input.dw-search-button, a.dw-search-button
    border-radius: 0;
    margin:0 auto;
 }
+
 form.dw-search input[type="submit"], input.dw-search-button, a.dw-search-button {
    position:absolute;
    left:auto;
@@ -1470,6 +1484,7 @@ label.dw-checkbox:before
    width:16px;
    height:16px;
 }
+
 label.dw-checkbox
 {
    cursor: pointer;
@@ -1524,6 +1539,7 @@ label.dw-radiobutton:before
    width:12px;
    height:12px;
 }
+
 label.dw-radiobutton
 {
    cursor: pointer;
@@ -1589,6 +1605,7 @@ label.dw-radiobutton.hovered:before
    margin:0 auto;
    margin-left: 96px;
 }
+
 .dw-comment-avatar 
 {
    float:left;
@@ -1727,8 +1744,7 @@ label.dw-radiobutton.hovered:before
    line-height: normal;
    font-family: Arial, 'Arial Unicode MS', Helvetica, Sans-Serif;
    text-decoration: none;
-   color: #1C2126
-;
+   color: #1C2126;
 }
 
 .dw-pager .active
@@ -1736,8 +1752,7 @@ label.dw-radiobutton.hovered:before
    background: #B6BFC9;
    padding:10px;
    margin:0 4px 0 auto;
-   color: #FFFFFF
-;
+   color: #FFFFFF;
 }
 
 .dw-pager .more
@@ -1748,22 +1763,23 @@ label.dw-radiobutton.hovered:before
 .dw-pager a.more:link,
 .dw-pager a.more:visited
 {
-   color: #411701
-;
+   color: #411701;
 }
+
 .dw-pager a:hover
 {
    background: #B9C2CB;
    padding:10px;
    margin:0 4px 0 auto;
 }
+
 .dw-pager  a:hover,
 .dw-pager  a.more:hover
 {
    text-decoration: none;
-   color: #21262C
-;
+   color: #21262C;
 }
+
 .dw-pager>*:after
 {
    margin:0 0 0 auto;
@@ -2021,6 +2037,7 @@ pre
    line-height:0;
    bottom: auto;
 }
+
 .opera .dw-postauthoricon:before
 {
    /* Vertical-align:middle in Opera doesn't need additional offset */
@@ -2038,6 +2055,7 @@ pre
    font-size:0;
    line-height:0;
 }
+
 .opera .dw-postediticon:before
 {
    /* Vertical-align:middle in Opera doesn't need additional offset */
@@ -2055,6 +2073,7 @@ pre
    font-size:0;
    line-height:0;
 }
+
 .opera .dw-postcontent ul>li:before, .opera   .dw-post ul>li:before, .opera   .dw-textblock ul>li:before
 {
    /* Vertical-align:middle in Opera doesn't need additional offset */
@@ -2121,10 +2140,11 @@ blockquote
    font-weight: normal;
    font-style: italic;
    text-align: left;
-   /* makes block not to align behind the image if they are in the same line */
+   /* Makes block not to align behind the image if they are in the same line */
   overflow: auto;
    clear:both;
 }
+
 blockquote a, .dw-postcontent blockquote a, .dw-blockcontent blockquote a, .dw-footer blockquote a,
 blockquote a:link, .dw-postcontent blockquote a:link, .dw-blockcontent blockquote a:link, .dw-footer blockquote a:link,
 blockquote a:visited, .dw-postcontent blockquote a:visited, .dw-blockcontent blockquote a:visited, .dw-footer blockquote a:visited,
@@ -2435,6 +2455,7 @@ blockquote p,
    line-height:0;
    margin-left: -13px;
 }
+
 .opera .dw-footer ul>li:before
 {
    /* Vertical-align:middle in Opera doesn't need additional offset */
@@ -2484,6 +2505,8 @@ blockquote p,
    color: #000000;
 }
 
+/* Integration with the lightbox project */
+/* http://lokeshdhakar.com/projects/lightbox2/ */
 .dw-lightbox-wrapper 
 {
    background: #333;
@@ -2676,6 +2699,7 @@ blockquote p,
 {
    display: none;
 }
+/* End of integration with lightbox */
 
 .dw-content-layout .dw-content
 {
