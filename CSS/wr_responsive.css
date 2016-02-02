@@ -253,7 +253,7 @@
    background-image: none;
 }
 
-/* '.dw-header *' used noram align, but for '.dw-textblock *' we must force align because of preview */
+/* '.dw-header *' used normal align, for '.dw-textblock *' we must force align for preview */
 .responsive .dw-header .dw-textblock *
 {
    text-align: center !important;
@@ -286,7 +286,7 @@
 {
    width: 100%;
 }
-/* dynamic width nav */
+/* Dynamic width nav */
 .responsive nav.dw-nav,
 .responsive .dw-nav-inner
 {
@@ -313,7 +313,7 @@
    padding-right: 0;
 }
 
-/* full width hmenu, instead of inline-block */
+/* Full width hmenu, instead of inline-block */
 .responsive .dw-nav ul.dw-hmenu 
 {
    float: none;
@@ -321,7 +321,7 @@
    display: none;
 }
 
-/* elements on different lines */
+/* Elements on different lines */
 .responsive .dw-nav ul.dw-hmenu li,
 .responsive .dw-hmenu-extra1,
 .responsive .dw-hmenu-extra2
@@ -329,7 +329,7 @@
    float: none;
 }
   
-/* horizontal margins */
+/* Horizontal margins */
 .responsive .dw-nav ul.dw-hmenu>li:first-child, 
 .responsive .dw-nav ul.dw-hmenu>li:last-child, 
 .responsive .dw-nav ul.dw-hmenu>li
@@ -338,13 +338,13 @@
    margin-right: 0;
 }
  
-/* separator */ 
+/* Separator */ 
 .responsive .dw-nav ul.dw-hmenu>li:before
 {
    display: none;
 }
 
-/* vertical distance between items */
+/* Vertical distance between items */
 .responsive .dw-nav ul.dw-hmenu a
 {
    margin-top: 1px !important;
@@ -363,7 +363,7 @@
    margin-bottom: 0 !important;
 }
 
-/* fixes for extended menu */
+/* Fixes for extended menu */
 .responsive .dw-nav .ext, 
 .responsive .dw-nav ul.dw-hmenu>li>ul, 
 .responsive .dw-nav ul.dw-hmenu>li>ul>li,
@@ -372,7 +372,7 @@
    width: auto !important;
 }
 
-/* submenu position on hover */
+/* Submenu position while on hover state */
 .responsive .dw-nav ul.dw-hmenu ul
 {
    left: auto !important;
